@@ -1,60 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Kusasira Solomon | Home page with personal and course-related information." />
-  <meta name="author" content="Kusasira Solomon" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals home page by Kusasira Solomon. Learn more about me, my goals, and course projects. Built with HTML, CSS, and JavaScript.">
+  <meta name="author" content="Kusasira Solomon">
   <title>WDD 131 – Dynamic Web Fundamentals – Kusasira Solomon</title>
-
-  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles/base.css" />
-
-  <!-- JavaScript -->
+  <link rel="stylesheet" href="styles/base.css">
   <script src="scripts/getdates.js" defer></script>
 </head>
-<body>
 
+<body>
   <header>
+    <h1 id="student-name">Kusasira Solomon</h1>
     <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
     <nav>
-  <ul>
-    <li><a href="https://www.linkedin.com/in/solomon-solomon-b25502345/" target="_blank">LinkedIn</a></li>
-    <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
-    <li><a href="https://www.churchofjesuschrist.org/" target="_blank">Church</a></li>
-    <li><a href="#about">About Me</a></li>
-    <li><a href="#goals">My Goals</a></li>
-    <li><a href="finalproject.html">Final Project</a></li>
-    <li><a href="resources.html">Web Dev Resources</a></li>
-  </ul>
-</nav>
-
+      <ul>
+        <li><a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a></li>
+        <li><a href="https://byui.instructure.com">Canvas</a></li>
+        <li><a href="https://www.churchofjesuschrist.org">Church</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#goals">My Goals</a></li>
+        <li><a href="#project">Final Project</a></li>
+        <li><a href="#resources">Web Dev Resources</a></li>
+      </ul>
+    </nav>
   </header>
 
- <main>
-  <section id="about" class="card">
-    <h2>About Me</h2>
-    <img src="images/profile.jpg" alt="Profile picture" class="profile-img">
-    <p>My name is Solomon Kusasira. I am passionate about learning software development...</p>
-  </section>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="images/profile.jpg" alt="Profile photo of Kusasira Solomon" width="200">
+      <p>My name is Solomon Kusasira. I am passionate about learning software development. I enjoy working on creative coding projects and building responsive web pages.</p>
+    </section>
 
-  <section id="goals" class="card">
-    <h2>My Goals</h2>
-    <ul>
-      <li>Become a skilled full-stack web developer</li>
-      <li>Build responsive and accessible web applications</li>
-      <li>Contribute to open-source projects</li>
-    </ul>
-  </section>
-</main>
+    <section id="goals">
+      
+      <h2>My Goals</h2>
+      <img src="images/goals.webp" alt="my goals" width="150">
+      <ul>
+        <li>Become a skilled full-stack web developer</li>
+        <li>Build responsive and accessible web applications</li>
+        <li>Contribute to open-source projects</li>
+      </ul>
+    </section>
+
+    <section id="project">
+      <h2>Final Project</h2>
+      <p>This page will include the link and description of my final WDD 131 project.</p>
+    </section>
+
+    <section id="resources">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org">MDN Web Docs</a></li>
+        <li><a href="https://css-tricks.com">CSS-Tricks</a></li>
+        <li><a href="https://www.w3schools.com">W3Schools</a></li>
+      </ul>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; <span id="currentyear"></span> Kusasira Solomon, Uganda</p>
+    <p>&copy; <span id="currentyear"></span> | Kusasira Solomon | Uganda</p>
     <p id="lastModified"></p>
   </footer>
-
 </body>
+
 </html>
