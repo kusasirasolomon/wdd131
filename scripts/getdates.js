@@ -1,7 +1,5 @@
-// scripts/getdates.js
-
-// Current year
+// Set current year
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 
-// Last modified date
+// Set last modified date
 document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
