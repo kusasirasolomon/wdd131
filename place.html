@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Country information page about Dubai">
+  <title>Dubai - Country Page</title>
+  <link rel="stylesheet" href="style/base.css">
+  <link rel="preload" href="images/dubai_hero_large.webp" as="image">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Dubai</h1>
+  </header>
+
+  <main>
+    <picture>
+      <source srcset="images/dubai_hero_large.webp" type="image/webp">
+      <img src="images/dubai_hero_large.webp" alt="Dubai skyline" class="hero-img">
+    </picture>
+    <aside>
+      <picture>
+      <source srcset="images/dubai_hero2.webp" type="image/webp">
+      <img src="images/dubai_hero2.webp" alt="Dubai skyline" class="hero-img">
+    </picture>
+    
+    </aside>
+    <section class="info">
+      <h2>About Dubai</h2>
+      <p>Dubai is a modern city in the United Arab Emirates known for its futuristic architecture, 
+        luxury shopping, and vibrant nightlife. It is also a source of employment to other countries 
+      since it is one of the most rich countries</p>
+    </section>
+
+    <section class="weather">
+      <h2>Current Weather</h2>
+      <div class="weather-info">
+        <img src="images/weather-icon.svg" alt="Weather Icon" class="weather-icon">
+        <p>Temperature: <span id="temp">32</span>°C</p>
+        <p>Wind Speed: <span id="wind">15</span> km/h</p>
+        <p id="windChill"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Kusasira Solomon | Dubai Info Page</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="script/script.js"></script>
+</body>
+</html>
