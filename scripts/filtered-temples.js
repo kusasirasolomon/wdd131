@@ -48,8 +48,6 @@ const temples = [
     area: 116642,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
- 
- 
   {
     templeName: "Bern Switzerland",
     location: "Bern, Switzerland",
@@ -62,7 +60,7 @@ const temples = [
     location: "Portland, Oregon, United States",
     dedicated: "1989, August, 28",
     area: 35000,
-    imageUrl:"https://www.churchofjesuschrist.org/imgs/91ee64d1750b013886f11c27f2c87c5535f5cbad/full/640%2C/0/default"
+    imageUrl: "https://www.churchofjesuschrist.org/imgs/91ee64d1750b013886f11c27f2c87c5535f5cbad/full/640%2C/0/default"
   },
   {
     templeName: "Paris France",
@@ -72,9 +70,6 @@ const temples = [
     imageUrl: "https://www.churchofjesuschrist.org/imgs/5ec026c4efeaaa19a98e40f0f1b4c6069ae63517/full/640%2C/0/default"
   }
 ];
-
-
-
 
 const displayTemples = (templesArray) => {
   const container = document.getElementById("temple-cards");
@@ -114,14 +109,14 @@ const filterTemples = (criteria) => {
   displayTemples(filtered);
 };
 
-document.querySelectorAll("nav button").forEach(button => {
-  button.addEventListener("click", () => {
-    filterTemples(button.dataset.filter);
+// ✅ Attach click handlers to nav <a> elements
+document.querySelectorAll("nav a").forEach(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+    const filter = link.getAttribute("data-filter");
+    filterTemples(filter);
   });
 });
 
+// Load all temples on initial page load
 displayTemples(temples);
-
-// Footer date
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;

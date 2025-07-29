@@ -3,29 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Filtered Temples</title>
+  <title>Temple Album</title>
+  <meta name="description" content="A filtered view of temples around the world categorized by age and size." />
+  <meta name="author" content="Kusasira Solomon" />
+  
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/filtered-temples.css" />
 </head>
 <body>
   <header>
-    <h1>Temples Around the World</h1>
-    <nav>
-      <button data-filter="all">Home</button>
-      <button data-filter="old">Old</button>
-      <button data-filter="new">New</button>
-      <button data-filter="large">Large</button>
-      <button data-filter="small">Small</button>
-    </nav>
+    <h1>Filtered Temples Album</h1>
+
+<nav>
+  <a href="#" data-filter="all">All</a>
+  <a href="#" data-filter="old">Old</a>
+  <a href="#" data-filter="new">New</a>
+  <a href="#" data-filter="large">Large</a>
+  <a href="#" data-filter="small">Small</a>
+</nav>
+
+
   </header>
 
   <main>
-    <div id="temple-cards" class="temple-grid"></div>
+    <div id="temple-cards" class="temple-grid">
+      <!-- Temple cards will be inserted here by JavaScript -->
+    </div>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span>Kusasira Solomon</p>
+    <p>
+      &copy; <span id="year"></span> | Last Modified: 
+      <span id="lastModified"></span> | Kusasira Solomon
+    </p>
   </footer>
 
   <script src="scripts/filtered-temples.js" defer></script>
+  <script>
+    // Update year and last modified
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
 </body>
 </html>
