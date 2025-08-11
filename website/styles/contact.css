@@ -1,0 +1,260 @@
+/* Base Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9fafb;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Header */
+header {
+  background-color: #111827; /* Dark gray/blue */
+  padding: 1rem 0;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  color: #f59e0b; /* Accent amber */
+  background-color: #1f2937;
+}
+
+/* Main */
+
+main h1,
+main h2 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.contact-intro {
+  padding: 3rem 0 2rem;
+  background-color: #f3f4f6;
+  text-align: center;
+}
+
+.contact-intro p {
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #4b5563;
+}
+
+/* Contact Methods Grid */
+.contact-methods {
+  padding: 2rem 0;
+}
+
+.methods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.method h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.method a {
+  color: #2563eb; /* Blue link */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.method a:hover {
+  color: #1d4ed8;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li a {
+  display: inline-block;
+  color: #374151;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid #374151;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.social-links li a:hover {
+  background-color: #f59e0b;
+  border-color: #f59e0b;
+  color: #111827;
+}
+
+/* Contact Form */
+.contact-form-section {
+  padding: 3rem 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.05);
+  border-radius: 8px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+label {
+  font-weight: 600;
+  color: #374151;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  font-family: inherit;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #d1d5db;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 3px rgb(245 158 11 / 0.3);
+}
+
+.accent-button {
+  background-color: #f59e0b;
+  border: none;
+  padding: 0.85rem 1.5rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #111827;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+}
+
+.accent-button:hover,
+.accent-button:focus {
+  background-color: #d97706;
+  outline: none;
+}
+
+/* Contact Location */
+.contact-location {
+  padding: 2rem 0 4rem;
+  background-color: #f3f4f6;
+  text-align: center;
+  font-style: normal;
+  color: #4b5563;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+/* Footer */
+footer {
+  background-color: #111827;
+  color: #e0e0e0;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0.75rem;
+}
+
+footer .social-links {
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer .social-links li a {
+  border: 2px solid #e0e0e0;
+  color: #e0e0e0;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+}
+
+footer .social-links li a:hover {
+  background-color: #f59e0b;
+  border-color: #f59e0b;
+  color: #111827;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  nav ul {
+    gap: 1rem;
+  }
+
+  .methods-grid {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    width: 100%;
+  }
+}
